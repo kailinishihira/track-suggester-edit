@@ -7,7 +7,6 @@
 ## Description
 
 _The webpage asks the user five questions about themselves, then suggests a programming language track to learn at Epicodus. The results are not based on any scientific facts or studies. There are three possible results based on the user's answers._
-_Images via www.epicodus.com_
 
 ## Setup/Installation Requirements
 
