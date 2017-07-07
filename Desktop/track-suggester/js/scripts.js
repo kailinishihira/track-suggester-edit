@@ -1,31 +1,22 @@
 $(document).ready(function() {
   $("#formOne").submit(function(event) {
-
     var nameInput = $("input#name").val();
-
-
-
-    var work = $("input:radio[name=work]:checked").val();
+    var work = parseInt($("input:radio[name=work]:checked").val());
     var frontEnd = $("input:radio[name=front-end]:checked").val();
-    var loveAndroid = $("input:radio[name=love-android]:checked").val();
-    var build = $("input:radio[name=build]:checked").val();
+    var loveAndroid = parseInt($("input:radio[name=love-android]:checked").val());
+    var build = parseInt($("input:radio[name=build]:checked").val());
+    var startDate = parseInt($("input:radio[name=start-date]:checked").val());
 
-    if (work === "startup" && frontEnd === "false" && loveAndroid == "false") {
+    if (work + loveAndroid + build + startDate === 4) {
       $("#ruby-rails").show();
-    } else if (work === "bigcompany" && frontEnd === "false" && loveAndroid == "false") {
-      $("#c-net").show();
-    } else {
+    } else if (frontEnd === "false" && work + loveAndroid + build + startDate > 4) {
+      $("#java-android").show();
+    } else if (frontEnd !== "false" && work + loveAndroid + build + startDate > 4) {
       $("#css-design").show();
     }
 
 
     $(".name").text(nameInput);
-  //  if (frontEnd === "true") {
-  //    $("#css-design").show();
-  //  } else if (frontEnd === "false") {
-  //    $("#css-design").hide();
-    //} else if (frontEnd === "true" && loveAndroid === "true") {
-    //  $("#java-android").show();
 
 
 
