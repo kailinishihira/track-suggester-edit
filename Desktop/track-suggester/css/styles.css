@@ -1,0 +1,12 @@
+body {
+  background-color: #70c8cc;
+}
+
+.jumbotron {
+  background-color: transparent;
+  text-align: center;
+}
+
+#c-net, #ruby-rails, #css-design, #java-android, #php-drupal {
+  display: none;
+}

@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script src="js/jquery-3.2.1.js"></script>
-    <script src="js/scripts.js"></script>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
     <title>Epicodus Track Suggester</title>
   </head>
   <body>
     <div class="container">
-      <h1>Which Epicodus Track Should I Choose?</h1>
+      <div class="jumbotron">
+        <h2>Which Epicodus Track is Right for Me?</h2>
+      </div>
       <div>
         <form id="formOne">
           <h3>I want to work for:</h3>
@@ -46,16 +48,16 @@
             </label>
           </div>
 
-          <h3>I am anti-Apple!</h3>
+          <h3>I love Android!</h3>
           <div class="radio">
             <label>
-              <input type="radio" name="anti-apple" value="true">
+              <input type="radio" name="love-android" value="true">
               True
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="anti-apple" value="false">
+              <input type="radio" name="love-android" value="false">
               False
             </label>
           </div>
@@ -86,6 +88,20 @@
             </label>
           </div>
 
+          <h3>When are you ready to start classes?</h3>
+          <div class="radio">
+            <label>
+              <input type="radio" name="start-date" value="asap">
+              ASAP!
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="start-date" value="later">
+              Sometime in the future
+            </label>
+          </div>
+
           <button type="submit" class="btn btn-info">Show me my results!</button>
         </form>
       </div>
@@ -102,9 +118,6 @@
         </div>
         <div id="java-android">
           <h2>Based on your answers, we recommend the Java/Android track!</h2>
-        </div>
-        <div id="php-drupal">
-          <h2>Based on your answers, we recommend the PHP/Drupal track!</h2>
         </div>
       </div>
 
