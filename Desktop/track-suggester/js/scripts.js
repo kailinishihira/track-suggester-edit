@@ -15,11 +15,7 @@ $(document).ready(function() {
       $("#css-design").show();
     }
 
-
     $(".name").text(nameInput);
-
-
-
 
     event.preventDefault();
   });

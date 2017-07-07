@@ -1,5 +1,10 @@
 body {
-  background-color: #70c8cc;
+
+}
+
+#results {
+  background-color: #F9F9F9;
+  text-align: center;
 }
 
 .jumbotron {
@@ -7,6 +12,6 @@ body {
   text-align: center;
 }
 
-#c-net, #ruby-rails, #css-design, #java-android, #php-drupal {
+#ruby-rails, #css-design, #java-android {
   display: none;
 }
