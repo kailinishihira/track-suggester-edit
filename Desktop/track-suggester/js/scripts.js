@@ -1,6 +1,8 @@
 $(document).ready(function() {
   $("#formOne").submit(function(event) {
 
+    var nameInput = $("input#name").val();
+
 
 
     var work = $("input:radio[name=work]:checked").val();
@@ -16,6 +18,8 @@ $(document).ready(function() {
       $("#css-design").show();
     }
 
+
+    $(".name").text(nameInput);
   //  if (frontEnd === "true") {
   //    $("#css-design").show();
   //  } else if (frontEnd === "false") {
