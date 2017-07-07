@@ -1,5 +1,5 @@
 body {
-
+  font-family: 'Raleway', sans-serif;
 }
 
 #results {
@@ -10,6 +10,7 @@ body {
 .jumbotron {
   background-color: transparent;
   text-align: center;
+  font-weight: bold;
 }
 
 #ruby-rails, #css-design, #java-android {
