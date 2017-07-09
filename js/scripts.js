@@ -1,6 +1,7 @@
 $(document).ready(function() {
   $("#formOne").submit(function(event) {
-    var nameInput = $("input#name").val();
+    $("this").remove();
+    var nameInput = ($("input#name").val()).toUpperCase();
     var work = parseInt($("input:radio[name=work]:checked").val());
     var frontEnd = $("input:radio[name=front-end]:checked").val();
     var loveAndroid = parseInt($("input:radio[name=love-android]:checked").val());
@@ -8,11 +9,11 @@ $(document).ready(function() {
     var startDate = parseInt($("input:radio[name=start-date]:checked").val());
 
     if (work + loveAndroid + build + startDate === 4) {
-      $("#ruby-rails").show();
+      $("#ruby-rails").fadeIn("slow").delay(9000).hide(1);
     } else if (frontEnd === "false" && work + loveAndroid + build + startDate > 4) {
-      $("#java-android").show();
+      $("#java-android").fadeIn("slow").delay(9000).hide(1);
     } else if (frontEnd !== "false" && work + loveAndroid + build + startDate > 4) {
-      $("#css-design").show();
+      $("#css-design").fadeIn("slow").delay(9000).hide(1);
     }
 
     $(".name").text(nameInput);

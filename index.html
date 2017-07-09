@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Ubuntu" rel="stylesheet">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Epicodus Track Suggester</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>GET ON THE RIGHT <em>track</em>.<br>
+        <p>Take this quiz to find out which Epicodus track is best for you!</p></h1>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <form id="formOne">
+            <div class="form-group">
+              <h3><label for="name">What is your name?</label></h3>
+              <input id="name" class="form-control" type="text">
+            </div>
+
+            <h3>I want to work for:</h3>
+            <div class="radio">
+              <label>
+                <input type="radio" name="work" value="1">
+                A start up or young company
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="work" value="2">
+                A big, established company or Fortune 500
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="work" value="3">
+                No preference - I just want a job
+              </label>
+            </div>
+
+            <h3>I am most interested in front-end development:</h3>
+            <div class="radio">
+              <label>
+                <input type="radio" name="front-end" value="true">
+                True
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="front-end" value="false">
+                False
+              </label>
+            </div>
+
+            <h3>I love Android!</h3>
+            <div class="radio">
+              <label>
+                <input type="radio" name="love-android" value="1">
+                True
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="love-android" value="2">
+                False
+              </label>
+            </div>
+
+            <h3>What do you want to build?</h3>
+            <div class="radio">
+              <label>
+                <input type="radio" name="build" value="1">
+                Apps
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="build" value="2">
+                Websites
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="build" value="3">
+                Internal Software
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="build" value="4">
+                Anything!
+              </label>
+            </div>
+
+            <h3>When are you ready to start classes?</h3>
+            <div class="radio">
+              <label>
+                <input type="radio" name="start-date" value="1">
+                ASAP!
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="start-date" value="2">
+                Sometime in the future
+              </label>
+            </div>
+            <br>
+            <button type="submit" class="btn">Show me my results!</button>
+          </form>
+        </div>
+
+        <div class="col-md-6">
+          <div>
+            <div id="ruby-rails">
+              <h1><img src="img/ruby.png" alt="ruby icon"><img src="img/rails.png" alt="rails icon"></h1>
+              <h2 class="results"><span class="name"></span>, based on your answers, we recommend the Ruby/Rails track!</h2>
+              <br>
+              <blockquote>
+                <p class="quote">"The most important thing is to get the basic principles of coding down, practice a lot, and be ready to change to another language when your job inevitably does."</p>
+                <footer>Michael Kaiser-Nyman, founder of Epicodus</footer>
+              </blockquote>
+              <p>For more information, please visit <a href="https://www.epicodus.com/seattle/" target="_blank">Epicodus.</a></p>
+            </div>
+
+            <div id="css-design">
+              <h1><img src="img/css.png" alt="css icon"><img src="img/design.png" alt="design icon"></h1>
+              <h2 class="results"><span class="name"></span>, based on your answers, we recommend the CSS/Design track!</h2>
+              <br>
+              <blockquote>
+                <p class="quote">"The most important thing is to get the basic principles of coding down, practice a lot, and be ready to change to another language when your job inevitably does."</p>
+                <footer>Michael Kaiser-Nyman, founder of Epicodus</footer>
+              </blockquote>
+              <p>For more information, please visit <a href="https://www.epicodus.com/seattle/" target="_blank">Epicodus.</a></p>
+            </div>
+
+            <div id="java-android">
+              <h1><img src="img/java.png" alt="java icon"><img src="img/android.png" alt="android icon"></h1>
+              <h2 class="results"><span class="name"></span>, based on your answers, we recommend the Java/Android track!</h2>
+              <br>
+              <blockquote>
+                <p class="quote">"The most important thing is to get the basic principles of coding down, practice a lot, and be ready to change to another language when your job inevitably does."</p>
+                <footer>Michael Kaiser-Nyman, founder of Epicodus</footer>
+              </blockquote>
+              <p>For more information, please visit <a href="https://www.epicodus.com/seattle/" target="_blank">Epicodus.</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>

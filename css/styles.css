@@ -1,0 +1,41 @@
+body {
+font-family: 'Ubuntu', sans-serif;
+}
+
+.jumbotron {
+  background-image: url("track.png");
+  background-size: cover;
+  text-align: center;
+}
+
+.jumbotron h1 {
+  opacity: .8;
+  font-weight: bold;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 75px;
+  background-color: black;
+  color: white;
+}
+
+.jumbotron p {
+  color: #c2c3c4;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 20px;
+  font-style: italic;
+}
+
+.results {
+  font-weight: bold;
+}
+.quote {
+  font-style: italic;
+  font-size: 14px;
+}
+#ruby-rails, #css-design, #java-android {
+  display: none;
+  background-color: white;
+  text-align: center;
+  margin: 10px;
+  border: 6px solid #00b3b4;
+  padding: 30px;
+}

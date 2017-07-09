@@ -12,7 +12,7 @@ _The webpage asks the user five questions about themselves, then suggests a prog
 
 * _Download Bootstrap_
 * _Download the uncompressed, development jQuery-3.2.1_
-* _Open in your browser_
+* _[Open in your browser](https://kailinishihira.github.io/track-suggester-edit/)_
 
 
 ## Known Bugs
