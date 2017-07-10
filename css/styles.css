@@ -1,5 +1,6 @@
 body {
 font-family: 'Ubuntu', sans-serif;
+font-size: 20px;
 }
 
 .jumbotron {
@@ -20,7 +21,7 @@ font-family: 'Ubuntu', sans-serif;
 .jumbotron p {
   color: #c2c3c4;
   font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 20px;
+  font-size: 30px;
   font-style: italic;
 }
 
